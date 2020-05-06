@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Form from './components/Form';
 import List from './components/List';
+// import Data from './Data';
 
 const url = "https://cors-anywhere.herokuapp.com/https://api.github.com/users/"
 
@@ -85,6 +86,7 @@ class App extends React.Component {
   onSubmit = event =>{
     event.preventDefault()
     this.setState({
+      user: '',
       userSearch: this.state.user
     })
   }

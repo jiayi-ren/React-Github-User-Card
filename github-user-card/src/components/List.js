@@ -3,10 +3,10 @@ import Card from './Card';
 
 const List = props =>{
     return (
-        <div>
+        <div className="cards">
             {
                 props.list.map( user =>{
-                    console.log(user)
+                    // console.log(user)
                     return(
                         <Card key={user.id} data={user}/>
                     ) 

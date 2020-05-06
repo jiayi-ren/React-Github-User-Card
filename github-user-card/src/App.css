@@ -37,6 +37,23 @@
   }
 }
 
+body {
+  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  width: 100%;
+}
+
 .card {
   width: 100%;
   padding: 20px;
@@ -46,4 +63,58 @@
   box-shadow: 0 1px 6px -2px #000;
   background-color: #FFF;
   margin-bottom: 30px;
+}
+
+.card .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.card .name {
+  font-size: 3.4rem;
+}
+
+.card p {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 530px;
+}
+
+.card .username {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 3px 0 10px;
+}
+
+.contribution {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 10px auto;
+}
+
+.input {
+  font-size: 2.4rem;
+  padding: 5px;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: #FFF;
+  color: #1fc8db;
 }
